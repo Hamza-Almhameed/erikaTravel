@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import "cairo" Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- import font awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/cc739edf58.js" crossorigin="anonymous"></script>
+
+    <!-- import main css file -->
+    <link rel="stylesheet" href="../CSS/places.css">
+
+    <!-- for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>رحلتي الى روما</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" style="margin-left: 75px;">مدونة أيريكا</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" aria-current="page" href="../index.html"><i class="bi bi-house-fill me-2"></i>الرئيسية</a>
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../about.html"><i class="bi bi-people-fill me-2"></i>من أنا ؟</a>
+              </li>
+              <li class="nav-item rounded">
+                <a class="nav-link" href="../contact.html"><i class="bi bi-telephone-fill me-2"></i>تواصل معنا</a>
+              </li>
+              <li class="nav-item dropdown rounded">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-2"></i>التسجيل</a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li onclick="error()"><a class="dropdown-item">انشاء حساب</a></li>
+                  <li onclick="error()"><a class="dropdown-item">تسجيل دخول</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../contact.html">طلب المساعدة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown rounded">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-2"></i>الاحتياجات الخاصة  <i class="fa-regular fa-eye"></i>  </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item" onclick="zoomIn()">تكبير الخط   <i class="fa-solid fa-plus"></i></li>
+                  <li class="dropdown-item" onclick="zoomOut()">تصغير الخط   <i class="fa-solid fa-minus"></i></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="dropdown-item" onclick="zoomReset()">الوضع الافتراضي   <i class="fa-solid fa-equals"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="hero">
+        <div>
+            <h1>رحلتي الى <span>روما</span>!</h1>
+            <p style="padding: 0 10% 0 10%;">هي عاصمة إيطاليا والبلدية والمدينة الكبرى في البلاد والأكثر سكانًا مع أكثر من 2.7 مليون نسمة منتشرين على 1,285.3 كم2. تقع المدينة في الجزء المركزي الغربي من شبه الجزيرة الإيطالية، على نهر التيبر في إقليم لاتسيو الإيطالي.</p>
+            <button><a href="https://jo.wego.com/flights/jo/rom/cheapest-flights-from-jordan-to-rome">حجز تذكرة</a></button>
+        </div>
+      </div>
+
+
+      <div id="next">
+        <h1 style="padding-bottom: 20px;">أبرز معالم روما السياحية</h1>
+        <div>
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1024px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #E26310;">الكولوسيوم</h5>
+              <p class="card-text" style="color: white;"> مدرج بيضاوي ضخم بناه الرومان القدماء. كان يستخدم لمباريات المصارعين والعروض العامة الأخرى.</p>
+              <a href="https://ar.wikipedia.org/wiki/%D9%83%D9%88%D9%84%D9%88%D8%B3%D9%8A%D9%88%D9%85" class="btn" style="background-color: #E26310; color: white;">مزيد من التفاصيل</a>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/1920px-Foro_Romano_Musei_Capitolini_Roma.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #E26310;">المنتدى الروماني</h5>
+              <p class="card-text" style="color: white;">مركز الحياة العامة في روما القديمة. يضم المنتدى العديد من المباني القديمة ، بما في ذلك المعابد والقصور والبازيليكا.</p>
+              <a href="https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%AA%D8%AF%D9%89_%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A" class="btn" style="background-color: #E26310; color: white;">مزيد من التفاصيل</a>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1024px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #E26310;">الفاتيكان</h5>
+              <p class="card-text" style="color: white;">أصغر دولة في العالم ، وهي موطن للبابا والكنيسة الكاثوليكية. يضم الفاتيكان العديد من المعالم السياحية الشهيرة ، بما في ذلك كنيسة القديس بطرس ومتاحف الفاتيكان.</p>
+              <a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D9%8A%D9%83%D8%A7%D9%86" class="btn" style="background-color: #E26310; color: white;">مزيد من التفاصيل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <h3>مدونة أيريكا</h3><hr>
+        <p>برمجة وتصميم: حمزة المحاميد (SE52660)</p>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+        <hr>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+      </div>
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- sweet alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- main js file -->
+<script src="../JS/script.js"></script>
+</html>

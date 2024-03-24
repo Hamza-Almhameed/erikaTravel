@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Cairo", sans-serif;
+}
+
+body{
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+}
+
+#parent{
+    background-color: #0000006e;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+}
+
+#parent button{
+    background-color: #E26310;
+    color: white;
+    border: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#parent button a{
+    color: white;
+    text-decoration: none;
+}
+
+#parent h1{
+    margin: 20px;
+    font-size: 1.6em;
+}
+
+#parent p{
+    background-color: #0000008c;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* scrollbar design */
+*::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 11px;
+    background-color: #818788;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #6C7172;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #535758;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: #000000;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #000000;
+  }

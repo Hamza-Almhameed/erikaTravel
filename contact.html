@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- import "cairo" Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- import font awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/cc739edf58.js" crossorigin="anonymous"></script>
+
+    <!-- import main css file -->
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    <title>تواصل معنا !</title>
+</head>
+<body>
+    <!-- This div contains the whole content on the website -->
+    <div class="all">
+
+        <!-- this form contains the input fields and the title for the email sending box -->
+        <form dir="rtl" class="email-sending">
+            <h1>تواصل معنا !</h1>
+            <p style="color: rgb(209, 209, 209);">بإمكانك ارسال أي ملاحظات او تفاصيل <br> او اقتراحات ترغب بإخبارها لي!</p>
+            <input required placeholder="الاسم" class="name" type="text">
+            <input required placeholder="البريد الالكتروني" class="email" type="email">
+            <input required placeholder="الرسالة" class="message" type="text">
+            <button class="send-button">ارسال</button>
+        </form>
+
+        <!-- this div is for the info that contains email, number etc... -->
+        <div class="info">
+            <h1>بعض المعلومات</h1>
+            <div class="email-info">
+                <i class="fa-solid fa-envelope"></i>
+                <span>ErikaTravels@gmail.com</span>
+            </div>
+
+            <div class="number-info">
+                <i class="fa-solid fa-phone"></i>
+                <span>+ 123 456 789</span>
+            </div>
+
+            <div class="street-info">
+                <i class="fa-solid fa-building"></i>
+                <span>لندن. بريطانيا</span>
+            </div>
+
+            <div class="time-info">
+                <i class="fa-solid fa-clock"></i>
+                <span>09:00 - 18:00</span>
+            </div>
+        </div>
+
+        <!-- this is the yellow box at the right of the page -->
+        <div class="yellow-box">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
